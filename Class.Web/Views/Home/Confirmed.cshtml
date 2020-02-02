@@ -1,0 +1,30 @@
+﻿@using Class.Data
+@model IEnumerable<Candidate>
+<div class="row">
+    <table class="table-bordered table-hover table-striped">
+        <tr>
+            <th> Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Notes</th>
+
+
+
+
+        </tr>
+        @foreach (Candidate c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.PhoneNumber</td>
+                <td>@c.Email</td>
+                <td>
+                    @c.Notes
+                </td>
+            </tr>
+        }
+
+
+
+    </table>
+</div>

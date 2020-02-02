@@ -1,0 +1,19 @@
+﻿@using Class.Data
+@model Candidate
+<div class="row">
+    <h3>Name: @Model.Name</h3>
+    <h3>Email: @Model.Email</h3>
+    <h3>Phone: @Model.PhoneNumber </h3>
+
+    <h3> Status: Pending</h3>
+
+    <h3>Notes: @Model.Notes</h3>
+    <input type="hidden" id="id" name="id" value="@Model.Id" />
+    <button class="btn btn-primary" id="confirmButton">Confirm</button>
+    <button class="btn btn-danger" id="declineButton">Decline</button>
+
+</div>
+
+@section scripts {
+    <script src="~/js/JavaScript.js"></script>
+}
